@@ -4,11 +4,14 @@ import os
 import sys
 import time
 import traceback
+from dotenv import load_dotenv
 from obababot import utilities, commands, gsfuncs, battlesim, games
-from obababot.utilities import \
+from obababot.utilities import (
     client, UserData, ReactMessages, RegisteredFuncs, reply, parse, load_data
+)
 print("Imported modules    ")
 
+load_dotenv()
 
 terminal_mode = "-t" in sys.argv
 show_errors = "-e" in sys.argv

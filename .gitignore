@@ -4,3 +4,4 @@ testing*
 botspeak*
 *.vscode
 venv
+.env
