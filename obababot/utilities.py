@@ -7,7 +7,9 @@ from copy import deepcopy
 prefix = os.getenv("PREFIX","$")
 usercommands = {}
 aliases = {}
-client = discord.Client(intents=discord.Intents.default())
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents=intents)
 UserData = {}
 ReactMessages = {}
 RegisteredFuncs = {}
