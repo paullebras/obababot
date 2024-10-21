@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "obabot",
+      name: "obababot",
       script: "main.py",
       interpreter: "./venv/bin/python", // Use Python from the virtual environment
       instances: 1, // Number of instances (0 for max instances)

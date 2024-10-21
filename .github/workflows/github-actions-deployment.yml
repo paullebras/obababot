@@ -22,10 +22,10 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no opc@141.145.209.102 << 'EOF'
           set -e
-          cd obabot
+          cd obababot
           git pull origin main
           python3 -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
-          pm2 reload ecosystem.config.js --only obabot || pm2 start ecosystem.config.js --only obabot
+          pm2 reload ecosystem.config.js --only obababot || pm2 start ecosystem.config.js --only obababot
         EOF
